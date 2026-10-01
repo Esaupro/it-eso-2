@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0b0b0b;
+            padding: 10px 20px;
+        }
+
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+        .barra-navegacion{
+            display: flex;
+            gap:15px;
+            margin-top: 10px;
+        }
+         .boton-nav{
+            text-decoration: none;
+            color:beige;
+            background-color: #a5a3a3;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+         .boton-nav:hover {
+            background-color:#f0b028(245,148,1);
+            color: #ffffff;
+        }
+         .boton-nav.activo {
+            background-color:#2d7b86(245,148,1);
+            color: #b63a3a;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #a5a3a3;
+            padding: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #f0b028;
+            padding: 15px;
+        }
+        body {
+            background-color:#171a1d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0; color:#ffffff;" >Mi Sitio Web</h1>
+            <nav style="color:#ffffff;">Menú de navegación</nav>
+            <nav class ="barra-navegacion">
+                <a href="index.html" class="boton-nav">Inicio</a>
+                <a href="pagina2.html" class="boton-nav ">servicio</a>
+                <a href="pagina3.html" class="boton-nav activo">contacto</a>
+            </nav>
+        </div>
+        <img src="IMAGENES/mbappe-zeki.gif" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" height="100">
+    </header>
+    <main>
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Enlaces, publicidad o categorías.</p>
+        </aside>
+        <section>
+            <article>
+                <h2>Artículo Principal</h2>
+                <p>Contenido del artículo...</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color:#ffffff;">Pie de página</p>
+    </footer>
+</body>
+</html>

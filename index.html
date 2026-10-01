@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0b0b0b;
+            padding: 10px 20px;
+        }
+
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+        .barra-navegacion{
+            display: flex;
+            gap:15px;
+            margin-top: 10px;
+        }
+        .boton-nav{
+            text-decoration: none;
+            color:beige;
+            background-color: #a5a3a3;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+        .boton-nav:hover {
+            background-color:#ab7f1f(245,148,1);
+            color: #ba1d1d;
+        }
+         .boton-nav.activo {
+            background-color:#2d7b86(245,148,1);
+            color: #b63a3a;
+            font-weight: bold;
+        }
+
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #a5a3a3;
+            padding: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #f0b028;
+            padding: 15px;
+        }
+        body {
+            background-color:#171a1d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0; color:#ffffff;" >Mi Sitio Web</h1>
+            <nav style="color:#ffffff;">Menú de navegación</nav>
+            <nav class ="barra-navegacion">
+                <a href="index.html" class="boton-nav activo">Inicio</a>
+                <a href="pagina2.html" class="boton-nav">servicio</a>
+                <a href="pagina3.html" class="boton-nav">contacto</a>
+            </nav>
+        </div>
+        <img src="IMAGENES/mbappe-zeki.gif" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" height="100">
+    </header>
+    <main>
+        <aside>
+            <h3>PEPSI</h3>
+            <p>"For the Love of It"</p>
+            <img  src="IMAGENES/PEPSI.webp" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" height="100">
+        </aside>
+        <section>
+            <article style="text-align: center;">
+                <h2>IT ESO (CAPITULO 2)</h2>
+                <p>Veintisiete años después de su derrota, Pennywise regresa a Derry, Maine, en 2016 y mata a un hombre llamado Adrian Mellon mordiéndole el corazón después de que él y su novio son brutalmente agredidos en un crimen de odio por lugareños después de visitar un carnaval.
+
+Mike Hanlon, el único miembro del Club de los Perdedores que permaneció en Derry, llama a los otros miembros, Bill Denbrough, Beverly Marsh, Ben Hanscom, Richie Tozier, Eddie Kaspbrak y Stanley Uris para honrar la promesa que hicieron 27 años antes, de matar a Pennywise si regresaba. Todos regresan a Derry, excepto Stanley, que se suicida por miedo a la criatura. En un restaurante chino, Mike refresca la memoria de los Perdedores antes de que Pennywise les revele la noticia del suicidio de Stanley. Richie y Eddie deciden irse hasta que Beverly revela que ha tenido visiones psíquicas de sus muertes en caso de que no cumplan con su juramento. Mientras tanto, Eso mata a una joven llamada Victoria en un juego de béisbol después de atraerla a una trampa.</p>
+            </article>
+            <img  src="IMAGENES/PENY2.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" style="display: block; margin: 0 auto;">
+              
+        </section>
+    </main>
+
+    <footer>
+        <p style="color:#ffffff;">Pie de página</p>
+    </footer>
+</body>
+</html>
